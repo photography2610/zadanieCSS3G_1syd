@@ -1,0 +1,128 @@
+<html>
+<head>
+<meta charset="utf-8"
+</head>
+<body>
+<H1> 1)Co to są pseudoklasyk? <br></H1>
+CSS przewiduje kilka ściśle określonych klas pozwalających na formatowanie niektórych
+elementów dokumentu są to Pseudoklasy.<br>
+<H1>2)Uwaga dotycząca dwukropka :<br></H1>
+Szalenie istotnym elementem w tej konstrukcji jest dwukropek występujący pomiędzy
+selektorem a nazwą klasy. <br>
+<H1>Tabela opisu pseudoklas</H1>
+<table border="2"><br>
+<tbody>
+    <tr> 
+        <td style="font-weight: bold;"><h1>A:link,</h1></td>
+        <td>odpowiada za wygląd hiperłącza, jeżeli nie zostało ono jeszcze odwiedzone,</td> 
+    </tr>
+
+    <tr> 
+        <td style="font-weight: bold;"><h1>A:visited,</h1></td>
+        <td>odpowiada za formatowanie hiperłącza już odwiedzonego.</td> 
+    </tr>
+
+    <tr> 
+        <td style="font-weight: bold;"><h1>A:hover, </h1></td>
+        <td>zmiany pewnych elementów po najechaniu na nie urządzeniem
+            wskazującym (np. myszą), np. odsyłacz, nad którym zatrzymano kusor
+            lub element blokowy DIV.</td> 
+    </tr>
+
+    <tr> 
+        <td style="font-weight: bold;"><h1>A:active,</h1></td>
+        <td>pozwala nadać dowolne formatowanie elementowi po nakierowaniu na
+            niego wskaźnika myszy i wciśnięciu przycisku, ale przed jego
+            zwolnieniem (odsyłacz aktywnykliknięty). </td> 
+    </tr>
+
+    <tr> 
+        <td style="font-weight: bold;"><h1>A:focus, </h1></td>
+        <td>jeżeli chcemy, by właśnie wyświetlany odsyłacz z menu był
+            formatowany innym kolorem. Odsyłacz posiadający tzw fokuszaznaczony przy poruszaniu się po dokumencie przy pomocy klawisza
+            tabulacji: naciśnięcie w tym momencie klawisza ENTER spowoduje taką
+            reakcję przeglądarki, jakby dany odsyłacz został kliknięty.
+        </td> 
+    </tr>
+
+    <tr> 
+        <td style="font-weight: bold;"><h1>:lang </h1></td>
+        <td>formatowanie wielojęzykowych dokumentów.</td> 
+    </tr>
+
+    <tr> 
+        <td style="font-weight: bold;"><h1>:first-child  </h1></td>
+        <td>umożliwia określenie formatowania dla pierwszego dziecka wybranego
+            elementu. </td> 
+    </tr>
+</tbody>
+</table><br>
+<H1>4)Zastosowanie pseudoklasy :active</H1>
+1)można używać jako uzupełnienia definicji odnośników.<br>
+2)jako elementu poprawiającego czytelność formularzy.<br><br>
+<table border="1">
+    <tbody>
+        <tr>
+            <td>
+    Przykład<br>
+    Temat: Arkusz wykorzystujący :link oraz :visited pseudoklasy w połączeniu z selektorem<br>
+    A. Przykładowa definicja sformatuje odnośnik za pomocą koloru czerwonego i po wybraniu<br>
+    taki odnośnik będzie miał kolor zielony.<br>
+    A:link<br>
+     {<br>
+     color:red;<br>
+     }<br>
+    A:visited<br>
+     {<br>
+     color:green;<br>
+     }<br>
+    </td>
+     </tr>
+    </tbody>
+</table><br>
+<table border="1">
+    <tbody>
+        <tr>
+            <td>
+    Przykład<br>
+Temat: Formatowanie wyglądu wszystkich odnośników w dokumencie XHTML/HTML.<br>
+A /* Definicja odsyłacza podstawowego*/<br>
+ {<br>
+ font-size:12pt;<br>
+ text-decoration:none;<br>
+ }<br>
+A:link<br>
+ {<br>
+ color:navy;<br>
+ }<br>
+A:visited<br>
+ {<br>
+ color:green;<br>
+ }<br>
+A:hover<br>
+ {<br>
+ color:red;<br>
+ text-decoration:underline;<br>
+ }<br>
+</td>
+</tr>
+</tbody>
+</table><br>
+
+<table border="1">
+    <tbody>
+        <tr>
+            <td>
+    Przykład<br>
+    Temat: Zastosowanie :focus<br>
+    A:focus<br>
+ {<br>
+ color:braun;<br>
+ }<br>
+</td>
+</tr>
+</tbody>
+</table><br>
+
+</body>
+</html>
