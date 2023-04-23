@@ -1,0 +1,37 @@
+p.first
+ {
+ color:rgb(0, 0, 0);
+ font-size:3pt;
+ }
+p.first:first-line
+ {
+ color:rgb(197, 45, 68);
+ font-size:5pt;
+ font-weight:bold;
+ }
+
+ p.second:before
+ {
+ content:"TO SĄ ĆWICZENIA";
+ font-size:5;
+ font-style:italic;
+ font-weight:bold;
+ }
+p.second:after
+ {
+ content:"AUTOR Król Lew";
+ font-size:5pt;
+ font-style:italic;
+ font-weight:bold;
+ }
+
+p.third
+ {
+ color:rgba(247, 27, 255, 0.38);
+ font-size:7pt;
+ }
+p.third:first-letter
+ {
+ color:red;
+ font-size:7pt;
+ }
